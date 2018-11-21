@@ -1,0 +1,44 @@
+#wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu__container {
+background:  #333;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu__container a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+.menu__container a:hover {
+    background-color: #555;
+}
+
+.motto__container {
+width: 100%;
+hight:80vw;
+}
+
+
+@media screen and (min-width: 768px){
+
+.menu {
+display: flex;
+}
+
+.menu__section {
+flex: 1 1 0;
+}
+
+}

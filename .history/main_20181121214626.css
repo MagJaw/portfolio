@@ -1,0 +1,259 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+.wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#section1 {
+    padding: 1vw;    
+}
+
+/*stylowanie paska menu*/
+
+.menu__container {
+    background:  #333;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    position: fixed;
+    }
+  
+.menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__section {
+    font-size: 1.5em;
+    flex: 1 1 0;
+}
+
+.menu__section a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 1vw;
+}
+
+.menu__section a:hover {
+    background-color: #555;
+}
+
+/*stylowanie obrazka z mottem*/
+
+.motto__container {
+    background-image: url(tapeta.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    width: 100%;
+    height: 48vw;
+    display: table;
+}
+
+.motto {
+    font-size: 3.5em;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    animation: pojawienie 4s ease 1 normal;
+}
+
+@keyframes pojawienie {
+
+    0%
+    {
+        opacity: 0;
+    }
+
+    20%
+    {
+        opacity: 0.2;
+    }
+    40%
+    {
+        opacity: 0.4;
+    }
+    60%
+    {
+        opacity: 0.6;
+    }
+    80%
+    {
+        opacity: 0.8;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+
+}
+
+/*wspólne stylowanie sekcji, nagłówków sekcji i list w sekcjach*/
+
+#section2,
+#section3,
+#section4,
+#section5 {
+    padding-top: 3vw;
+}
+
+.header__section {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid #555;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.item {
+    font-size: 1.5em;
+    list-style-image: url("https://img.icons8.com/color/25/000000/checkmark.png");
+    padding-left: 1vw;
+}
+
+/*wspólne stylowanie linków*/
+
+.link {
+    text-decoration: none;
+} 
+
+.link:hover {
+    text-decoration: underline;
+} 
+
+/*indywidualne stylowanie sekcji "O mnie"*/
+
+#section2 {
+    padding-bottom: 2vw;
+    }
+    
+.section2__img {
+    float: left;
+    padding-right: 15px;
+}
+
+.my__photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.history {
+    font-size: 1.5em;
+    text-align: justify; 
+}
+
+/*indywidualne stylowanie sekcji "projekty"*/
+
+#section5 {
+    padding-bottom: 25vw;
+    }
+
+/*stylowanie stopki*/
+
+.footer {
+display: flex;
+border-top: 1px solid #555;
+align-items: center;
+}
+
+.footer__text,
+.footer__icon {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.footer__text {
+font-style: italic;
+font-size: 1em;
+} 
+
+/*media queries*/
+
+@media screen and (max-width: 767px){
+
+ /*stylowanie wielkości czcionek*/   
+
+.motto {
+    font-size: 1.8em;
+}
+
+.header__section {
+    font-size: 1.4em;
+}
+
+.menu__section{
+    font-size: 0.7em;
+}
+
+.history,
+.item {
+    font-size: 1em;
+}
+
+.footer__text {
+    font-size: 0.6em;
+}
+
+/*stylowanie sekcji "o mnie"*/
+
+#section2 {
+    padding-bottom: 0vw;
+}
+
+.section2__img {
+    float: none;
+    padding-right: 0;
+    display: block;
+    text-align: center;
+    }
+    
+/*stylowanie elementów listy*/
+
+.item {
+list-style-image: url("https://img.icons8.com/color/15/000000/checkmark.png");
+}
+
+}
+
+@media screen and (min-width: 1440px){
+    
+/*stylowanie wielkości czcionek*/ 
+
+    .motto {
+        font-size: 4.5em;
+    }
+        
+    .header__section {
+        font-size: 3.5em;
+    }
+
+    .menu__section,
+    .history,
+    .item {
+        font-size: 2.5em;
+    }
+
+    .footer__text {
+        font-size: 2em;
+    }
+    
+/*stylowanie wielkości ikonki Github*/
+
+    .footer__img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
